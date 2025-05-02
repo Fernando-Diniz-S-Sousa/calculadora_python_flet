@@ -40,14 +40,8 @@ def main(page: ft.Page):
         resultado_texto.value = todos_valores if todos_valores else '0'
         page.update()
 
-
 #---------------- resultado texto ----------------
     resultado_texto = ft.Text(value='0', size=28, color='white', text_align='right')
-
-
-#---------------- funiconalidade dos botões ----------------
-
-
 
 #---------------- Tela de resultado ----------------
     tela= ft.Container(
@@ -59,7 +53,6 @@ def main(page: ft.Page):
         alignment = ft.alignment.center_right
     
     )
-
 
 #---------------- botões Visual ----------------
 #---------------- números ----------------
@@ -95,9 +88,6 @@ def main(page: ft.Page):
         'color':'white',
         'expand':'1',
     }
-
-
-
 
 #---------------- Botões ----------------
     grelha_de_botoes = [
@@ -156,7 +146,6 @@ def main(page: ft.Page):
                 )
             linha_control.append(btn)
         botoes.append(ft.Row(linha_control, spacing=5))
-
 
 ##---------------- adiciona os itens ao app ----------------
     page.add(
